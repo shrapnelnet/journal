@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Tutorial</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Learning Journal</h1>
+            <h2>Weekly Posts</h2>
+            <article>
+                <h4>Week Five - <time datetime="2023-10-29">29/10/2023</time>:</h4>
+                <p>This week, I had already added font fallbacks for all platforms, so I instead added breakpoint fixes and other misc changes.</p>
+                <ol>
+                    <li>I hid the table on mobile viewports where it would refuse to shrink. This is a temporary fix for now.</li>
+                    <li>I migrated my font from local hosting to a CDN which globally distributes my static resources at an edge server close to the request origin to speed up loading. I did this using Google cloud platform storage buckets over a load balancer.</li>
+                    <li>I used float to reorient this image to the right</li>
+                </ol>
+                <figure>
+                    <img src="/img/week5/tunis.jpg" alt="a landscape in tunisia" class="floater">
+                    <p>This is a landscape in tunisia. The image floats right !</p>
+                </figure>
+                <small><cite><a href="https://commons.wikimedia.org/w/index.php?curid=40687022" target="_blank">By Elarbi Alaeddin - Own work, CC BY-SA 3.0</a></cite></small>
+                <p>This is the HTML validation</p>
+                <img src="/img/week5/week5htmlval.PNG" alt="w3c html validator">
+                <p>This is the CSS validation</p>
+                <img src="/img/week5/week5cssval.PNG" alt="w3c css validator">
+            </article>
+            <article>
+                <h4>Week Four - <time datetime="2023-10-22">22/10/2023</time>:</h4>
+                <p>This week, I created custom CSS for the webpage in my favourite style reminiscent of the 2000s web (or 'webrevival' affectionately)</p>
+                <ol>
+                    <li>I added a background image</li>
+                    <li>I used flexbox to create a responsive navbar</li>
+                    <li>I removed bullet points and the margin they add</li>
+                    <li>I implemented a custom font using the optimised for web format WOFF with @font-face</li>
+                    <li>I used colour to highlight certain elements like spans and anchors</li>
+                    <li>I added media queries to fix the navbar and content window on mobile viewports</li>
+                    <li>I added the relevant meta tags to keep content working on mobile</li>
+                    <li>I moved the table inline style to CSS</li>
+                    <li>I minified normalize and included its source map to speed up load times</li>
+                    <li>I added suitable font fallbacks to ensure relevant fonts are always applied</li>
+                    <li>I specified font-display in @font-face to make sure that on downloading the font, the load will be non-blocking (using fallback)</li>
+                </ol>
+                <p>This is the W3C html validator:</p>
+                <img src="/img/week4/week4htmlval.PNG" alt="w3c HTML validation screenshot">
+                <p>And this is the W3C css validator:</p>
+                <img src="/img/week4/week4cssval.PNG" alt="w3c CSS validation screenshot">
+            </article>
+            <article>
+                <h4>Week Three - <time datetime="2023-10-15">15/10/2023</time>:</h4>
+                <p>Today I learned about more types of lists within HTML.</p>
+                <ol>
+                    <li>I implemented a description list.</li>
+                    <li>I created a table to represent my timetable and read up on legacy css like float hacks.</li>
+                    <li>I added a section for quotes and used the blockquote and cite elements.</li>
+                </ol>
+                <dl>
+                    <dt>&lt;dl&gt;<dt>
+                    <dd>Description list. An element designed to form sections of a page like glossaries to define terms.</dd>
+                    <dt><strong>HTML</strong></dt>
+                    <dd>Hypertext markup language. Forms the layout or 'markup' of a webpage</dd>
+                    <dt>&lt;ul&gt;</dt>
+                    <dd>Unordered list. A bulleted list of items</dd>
+                    <dt>&lt;ol&gt;</dt>
+                    <dd>Ordered list. An ordered list of items</dd>
+                </dl>
+                <h5 id="table-caption">My timetable:</h5>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>9-10</td>
+                            <td></td>
+                            <td></td>
+                            <td>Lecture</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10-11</td>
+                            <td></td>
+                            <td>Test</td>
+                            <td></td>
+                            <td>Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11-12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Seminar</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>  
+                <a href="https://en.wikipedia.org/wiki/Snatch_(film)" target="_blank">
+                    <img src="/img/week3/snatch.jpg" alt="the dvd cover for the movie snatch (2000)">
+                </a>
+                <h5>My favourite quote:</h5>
+                <blockquote>
+                    <p><span class="speaker">Brick Top:</span> You're always gonna have problems lifting a body in one piece. Apparently the best thing to do is cut up a corpse into six pieces and pile it all together.</p>
+                    <p><span class="speaker">Sol:</span> Would someone mind telling me, who are you?</p>
+                    <p><span class="speaker">Brick Top:</span> And when you got your six pieces, you gotta get rid of them, because it's no good leaving it in the deep freeze for your mum to discover, now is it? Then I hear the best thing to do is feed them to pigs. You got to starve the pigs for a few days, then the sight of a chopped-up body will look like curry to a pi**head. You gotta shave the heads of your victims, and pull the teeth out for the sake of the piggies' digestion. You could do this afterwards, of course, but you don't want to go sievin' through pig s**t, now do you? They will go through bone like butter. You need at least sixteen pigs to finish the job in one sitting, so be wary of any man who keeps a pig farm. They will go through a body that weighs 200 pounds in about eight minutes. That means that a single pig can consume two pounds of uncooked flesh every minute. Hence the expression, "as greedy as a pig".</p>
+                    <p><span class="speaker">Vinny:</span> Well, thank you for that. That's a great weight off me mind. Now, if you wouldn't mind telling me who the f**k you are, apart from someone who feeds people to pigs of course?</p>
+                    <footer>
+                        <cite><a href="https://www.imdb.com/title/tt0208092/quotes/?item=qt0480491&ref_=ext_shr_lnk" target="_blank">Snatch (2000) - IMDB</a></cite>
+                    </footer>
+                </blockquote>
+                <p>Here is a screenshot of the page:</p>
+                <img src="/img/week3/week3img1.PNG" alt="the first half of the changes made in week one">
+                <img src="/img/week3/week3img2.PNG" alt="the second half of the changes made in week two">
+                <p>Here is the validator:</p>
+                <img src="/img/week3/week3val.PNG" alt="a screenshot of the w3c validator">
+            </article>
+            <article>
+                <h4>Week Two - <time datetime="2023-10-08">8/10/2023</time>:</h4>
+                <figure>
+                    <img src="/img/week2/Coracias_caudata.jpg" width="400" alt="a bird belonging to species coracias caudata perched on a tree">
+                    <figcaption>Lilac-breasted roller</figcaption>
+                </figure>
+                <small>&copy; David J. Stang, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Coracias_caudata_1zz.jpg" target="_blank">wikimedia commons</a></small>
+                <p>This week, I added more features to the html skeleton.</p>
+                <ol>
+                    <li>I implemented this list to better display how i am doing things</li>
+                    <li>I added a mailto link to the footer</li>
+                    <li>I added the semantic elements, <code>&lt;time&gt;</code> and <code>&lt;code&gt;</code></li>
+                    <li>I used escape codes like lt, gt and copy.</li>
+                    <li>I added an image using semantic elements like <code>&lt;figure&gt;</code></li>
+                    <li>I attributed the image correctly under the creative commons</li>
+                </ol>
+                <p>Here is the page:</p>
+                <img src="/img/week2/week2.PNG" alt="screenshot of my webpage as of week 2">
+                <p>Here is the validator:</p>
+                <img src="/img/week2/week2val.PNG" alt="w3c validator screenshot">
+            </article>
+            <article>
+                <h4>Week One - <time datetime="2023-10-01">1/10/2023</time>:</h4>
+                <p>After finishing the first tutorial, I wrote up a basic html skeleton and created a good file structure</p>
+                <p>This is my webpage without styling:</p>
+                <img src="/img/week1/week1.PNG" alt="screenshot of a barebones webpage without styling">
+                <p>And here is the markup:</p>
+                <img src="/img/week1/week1src.PNG" alt="vs code screenshot of html skeleton">
+                <p>Finally, here is the w3c validator confirming that the html is valid:</p>
+                <img src="/img/week1/week1w3val.PNG" alt="screenshot of the w3c validator being run on the source of the website">
+            </article>
+        </main>
+        <div class="stamps">
+            <img src="/img/stamps/crackcocaine.png" alt="stamp that says: yes i do crack cocaine doesnt everyone">
+            <img src="/img/stamps/cute.gif" alt="animated smiley face moving up and down">
+            <img src="/img/stamps/dog.gif" alt="animated dog from undertale jumping up and down">
+            <img src="/img/stamps/guineapig.png" alt="guinea pig next to sentence: i love guinea pigs">
+            <img src="/img/stamps/hearteevee.gif" alt="slideshow of pokemon eevee variants">
+            <img src="/img/stamps/konata.gif" alt="konata from lucky star throwing their hands in the air">
+            <img src="/img/stamps/luckystar.gif" alt="konata from lucky star">
+            <img src="/img/stamps/meaning.gif" alt="cats dancing next to phrase: life has no meaning">
+            <img src="/img/stamps/nononono.gif" alt="words nonononono stream downwards in gif as if being typed">
+            <img src="/img/stamps/propaganda.png" alt="garfield behind phrase: you are not immune to propaganda">
+            <img src="/img/stamps/undertale.gif" alt="animated gif of undertale logo">
+            <img src="/img/stamps/wet.jpg" alt="sign with flame that says dangerous when wet">
+            <img src="/img/stamps/wii.gif" alt="nintendo wii animated logo">
+            <img src="/img/stamps/youhavenoidea.png" alt="blue emoticon next to sentence: you have no fucking idea what you're up against">
+            <img src="/img/stamps/neocities.png" alt="neocities logo next to cat mascot">
+            <img src="/img/stamps/cat.gif" alt="cat walking towards screen">
+            <img src="/img/stamps/rabbit.gif" alt="rabbit next to a heart">
+            <img src="/img/stamps/paranoid.gif" alt="">
+        </div>
+        <footer>
+            <h3>References:</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML reference</a></li>
+            </ul>
+            <div class="center">
+                <sub class="mr">&copy; <a href="mailto:admin@shr4pnel.com">Tyler Docherty</a> 2023 under <a target="_blank" href="http://wtfpl.net">WTFPL</a></sub>
+                <img src="/img/WTFPL_badge.png" alt="WTFPL license badge">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

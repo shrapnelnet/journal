@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Toshiba";
+    src: url("https://storage.googleapis.com/shr4pnel-assets/ToshibaSat_8x8.woff") format(woff);
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    background: url("/img/bird.jpg");
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Toshiba", monospace, system-ui;
+}
+
+h1 {
+    text-shadow: -3px 2px goldenrod;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+nav > ul {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0px;
+}
+
+a {
+    color: #daa520;
+}
+
+p, li {
+    font-size: smaller;
+    margin: 20px;
+}
+
+img {
+    border: 1px solid black;
+    max-width: 90%;
+}
+
+code {
+    background: rgb(231, 231, 231);
+    padding: 1px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: small;
+}
+
+small {
+    margin-top: 20px;
+}
+
+dt {
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+dd {
+    font-size: small;
+    margin: 0 0 10px 0;
+}
+
+table {
+    margin: 10px;
+    display: inline-block;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+blockquote > p {
+    line-height: 1.3em;
+}
+
+cite {
+    font-size: small;
+}
+
+.speaker {
+    color: goldenrod;
+}
+
+.container {
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 700px;
+    max-width: 90%;
+    margin: 4% 0 2% 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stamps {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.mr {
+    margin-right: 10px;
+}
+
+.floater {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.stamps > img {
+    margin: 2px;
+}
+
+@media screen and (width < 1500px) {
+    .container {
+        margin-top: 6%;
+    }
+}
+
+@media screen and (width < 1200px) {
+    .container {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (width < 729px) {
+    .container {
+        margin-top: 14%;
+    }
+
+    table {
+        display: none;
+    }
+
+    #table-caption {
+        display: none;
+    }
+}
+
+@media screen and (width < 500px) {
+    blockquote {
+        margin: 10px;
+        text-align: left;
+    }
+
+    sub {
+        line-height: 1.5em;
+    }
+
+    p {
+        margin: 1px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 2px 0;
+    }
+
+    .container {
+        margin-top: 40%;
+        max-width: 75%;
+    }
+}
