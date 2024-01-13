@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Toshiba";
-    src: url("https://storage.googleapis.com/shr4pnel-assets/ToshibaSat_8x8.woff") format(woff);
+    src: url("https://pub-2455e73e72c0409fa6e5404c3409c4b3.r2.dev/WebPlus_ToshibaSat_8x8.woff");
     font-weight: 400;
 }
 
@@ -18,9 +18,12 @@ h1 {
 }
 
 nav {
+    padding: 0 20px;
     position: absolute;
-    width: 100%;
-    border-bottom: 2px solid black;
+    width: 700px;
+    max-width: 90%;
+    border: 2px solid black;
+    background: white;
 }
 
 nav > ul {
@@ -29,13 +32,12 @@ nav > ul {
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    background: white;
 }
 
 nav > ul > li {
     list-style: none;
     padding: 0 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 a {
@@ -186,7 +188,11 @@ cite {
     }
 
     .container {
-        margin-top: 40%;
+        margin-top: 30%;
+        max-width: 75%;
+    }
+
+    nav {
         max-width: 75%;
     }
 }
