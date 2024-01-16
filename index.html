@@ -26,6 +26,28 @@
             <h1>Learning Journal</h1>
             <h2>Weekly Posts</h2>
             <article>
+                <h4>Week Six - <time datetime="2023-11-05">05/11/2023</time></h4>
+                <p>This week, I had to migrate my static assets away from Google cloud platform.</p>
+                <p>This involved the following actions:</p>
+                <ol>
+                    <li>I disabled my Google Cloud Platform billing account</li>
+                    <li>I migrated the static assets to Cloudflare R2</li>
+                    <li>I set up a CORS policy on the bucket to allow cross-origin requests to it</li>
+                    <li>I rewrote all the old url paths to the new R2 public URLs.</li>
+                </ol>
+                <p>I also wrote CSS to make the site mobile first as so:</p>
+                <ol>
+                    <li>I made the heading collapse into flex-display column below a mobile breakpoint</li>
+                    <li>The main content is mobile safe using a fixed width as to keep consistency</li>
+                    <li>I hid the table on mobile viewports due to its inflexibility</li>
+                    <li>All relevant meta tags are included in the head</li>
+                </ol>
+                <p>On top of this, I included these changes:</p>
+                <ol>
+                    <li>I organized all CSS files into independent folders</li>
+                    <li>All images are flexible and will not overflow their containers (max-width)</li>
+                </ol>
+                <img src="/img/week6/week6val.png" alt="Week 6 validation screenshot">
                 <h4>Week Five - <time datetime="2023-10-29">29/10/2023</time>:</h4>
                 <p>This week, I had already added font fallbacks for all platforms, so I instead added breakpoint fixes and other misc changes.</p>
                 <ol>
