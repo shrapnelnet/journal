@@ -132,8 +132,48 @@ cite {
     margin-bottom: 10px;
 }
 
+.cards {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+}
+
+.three-children {
+    flex-basis: 33%;
+}
+
+.cards > .card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.card-content > img {
+    border: none;
+}
+
 .stamps > img {
     margin: 2px;
+}
+
+.no-border {
+    border: none;
+}
+
+img.banner {
+    width: 1000px;
+}
+
+.flow {
+    clear: both;
+}
+
+.flow > img {
+    width: 33%;
+    float: left;
+    margin-bottom: 100px;
 }
 
 @media screen and (width < 729px) {
@@ -179,5 +219,10 @@ cite {
 
     nav {
         max-width: 75%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 90%;
     }
 }

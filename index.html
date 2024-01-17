@@ -6,6 +6,7 @@
     <title>Journal</title>
     <link rel="stylesheet" href="/css/normalize.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -23,11 +24,50 @@
     </nav>
     <div class="container">
         <main>
+            <img src="/img/banner.gif" alt="blue banner with ribbons" class="no-border banner">
             <h1>Learning Journal</h1>
             <h2>Weekly Posts</h2>
             <article>
+                <h4>Week Nine - <time datetime="2023-11-26">26/11/2023</time></h4>
+                <p>This week I finished up the other pages.</p>
+                <p>I added a form to the contacts page and finished up the whole site.</p>
+            </article>
+            <article>
+                <h4>Week Eight - <time datetime="2023-11-19">19/11/2023</time></h4>
+                <p>This week I made some flexbox card layouts</p>
+                <p>They automatically resize and the columns do not collapse since the images resize</p>
+                <p>They can also be made to collapse, however.</p>
+                <div class="cards">
+                    <div class="card-content three-children">
+                        <img src="/img/bird.jpg" alt="it's a bird!">
+                        <p>Do you think this bird looks kinda tasty?</p>
+                    </div>
+                    <div class="card-content three-children">
+                        <img src="/img/bird.jpg" alt="it's a bird!">
+                        <p>I think so.</p>
+                    </div>
+                    <div class="card-content three-children">
+                        <img src="/img/bird.jpg" alt="it's a bird!">
+                        <p>How about you?</p>
+                    </div>
+                </div>
+            </article>
+            <article>
                 <h4>Week Seven - <time datetime="2023-11-12">12/11/2023</time></h4>
-                <h4>Week Six - <time datetime="2023-11-05">05/11/2023</time></h4>
+                <p>This week I ensured images were displayed flexibly</p>
+                <p>At the top is a banner that will not overflow the container on any mobile viewport</p>
+                <p>Below is an image using clear to let text flow around an image</p>
+                <p>As well as an embedded youtube video which maintains aspect ratio on different viewports</p>
+                <div class="flow vertical-center">
+                    <img src="/img/track.jpg" alt="a river trail surrounded by brown grass">
+                    <p>Track, South Erradale to Redpoint</p>
+                    <small>It looks like once this was a very substantial track.</small>
+                </div>
+                <small><cite><a href="https://www.geograph.org.uk/photo/5105511" target="_blank">By Mick Garratt, CC BY-SA 2.0</a></cite></small>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iz3tmYDl6XI?si=R998unwxFcRw7wfl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h4 class="flow">Week Six - <time datetime="2023-11-05">05/11/2023</time></h4>
                 <p>This week, I had to migrate my static assets away from Google cloud platform.</p>
                 <p>This involved the following actions:</p>
                 <ol>
@@ -49,6 +89,8 @@
                     <li>All images are flexible and will not overflow their containers (max-width)</li>
                 </ol>
                 <img src="/img/week6/week6val.png" alt="Week 6 validation screenshot">
+            </article>
+            <article>
                 <h4>Week Five - <time datetime="2023-10-29">29/10/2023</time>:</h4>
                 <p>This week, I had already added font fallbacks for all platforms, so I instead added breakpoint fixes and other misc changes.</p>
                 <ol>
