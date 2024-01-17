@@ -107,7 +107,7 @@ cite {
     padding: 20px;
     width: 700px;
     max-width: 90%;
-    margin: 90px 0 2% 0;
+    margin: 75px 0 2% 0;
 }
 
 .center {
@@ -147,7 +147,6 @@ cite {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    align-content: center;
 }
 
 .card-content > img {
@@ -176,7 +175,55 @@ img.banner {
     margin-bottom: 100px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-end > label {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+label > input, label > textarea {
+    margin-left: 20px;
+}
+
+#socials {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+#socials > div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#socials > div > img {
+    margin-right: 10px;
+}
+
+input {
+    font-family: sans-serif, system-ui;
+}
+
 @media screen and (width < 729px) {
+    .container {
+        margin-top: 20%;
+    }
 
     table {
         display: none;
@@ -184,6 +231,15 @@ img.banner {
 
     #table-caption {
         display: none;
+    }
+
+    .flex-end > label {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    label > input, label > textarea {
+        margin: 0;
     }
 }
 
@@ -215,6 +271,7 @@ img.banner {
 
     .container {
         max-width: 75%;
+        margin-top: 25%;
     }
 
     nav {

@@ -8,6 +8,50 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="/tutorial.html">Tutorial</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Contact Me!</h1>
+            <form class="sans-serif">
+                <div class="flex-end">
+                    <label>
+                        Email Address
+                        <input type="email" required name="email">
+                    </label>
+                    <label>
+                        First Name
+                        <input type="text" name="firstname">
+                    </label>
+                    <label>
+                        Last Name
+                        <input type="text" name="lastname">
+                    </label>
+                    <label>
+                        Comments
+                        <textarea name="comment" cols="14" rows="10" required></textarea>
+                    </label>
+                </div>
+                <input type="submit" value="Submit!">
+            </form>
+            <h2>Or message me at:</h2>
+                <div id="socials">
+                    <div style="width:42px"></div>
+                    <a href="mailto:admin@shr4pnel.com">My email</a>
+                    <div><img src="/img/github-mark.svg" alt="github logo" width="32px" height="32px"><a href="https://github.com/shrapnelnet/" target="_blank">github/shrapnelnet</a></div>
+                </div>
+        </main>
+    </div>
 </body>
 </html>
